@@ -16,6 +16,13 @@
 		351953432AB5A451002D3D69 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351953422AB5A451002D3D69 /* TestAppTests.swift */; };
 		3519534D2AB5A451002D3D69 /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519534C2AB5A451002D3D69 /* TestAppUITests.swift */; };
 		3519534F2AB5A451002D3D69 /* TestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519534E2AB5A451002D3D69 /* TestAppUITestsLaunchTests.swift */; };
+		A88317702AB8190C007A8810 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A883176F2AB8190C007A8810 /* AlbumDetailView.swift */; };
+		A8D9CDF12AB80424007ABB4A /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9CDF02AB80424007ABB4A /* AlbumModel.swift */; };
+		A8D9CDF42AB8052C007ABB4A /* AlbumServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9CDF32AB8052C007ABB4A /* AlbumServices.swift */; };
+		A8D9CDF62AB80602007ABB4A /* AlbumOfflineServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9CDF52AB80602007ABB4A /* AlbumOfflineServices.swift */; };
+		A8D9CDF92AB80962007ABB4A /* AlbumRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9CDF82AB80962007ABB4A /* AlbumRepository.swift */; };
+		A8D9CDFC2AB80A60007ABB4A /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9CDFB2AB80A60007ABB4A /* AlbumViewModel.swift */; };
+		A8D9CDFF2AB80B6B007ABB4A /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9CDFE2AB80B6B007ABB4A /* AlbumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,13 @@
 		351953482AB5A451002D3D69 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3519534C2AB5A451002D3D69 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		3519534E2AB5A451002D3D69 /* TestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A883176F2AB8190C007A8810 /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
+		A8D9CDF02AB80424007ABB4A /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		A8D9CDF32AB8052C007ABB4A /* AlbumServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumServices.swift; sourceTree = "<group>"; };
+		A8D9CDF52AB80602007ABB4A /* AlbumOfflineServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumOfflineServices.swift; sourceTree = "<group>"; };
+		A8D9CDF82AB80962007ABB4A /* AlbumRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRepository.swift; sourceTree = "<group>"; };
+		A8D9CDFB2AB80A60007ABB4A /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		A8D9CDFE2AB80B6B007ABB4A /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,11 @@
 		3519532B2AB5A44F002D3D69 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				A8D9CDFD2AB80B59007ABB4A /* View */,
+				A8D9CDFA2AB80A4F007ABB4A /* ViewModel */,
+				A8D9CDF72AB80954007ABB4A /* Repository */,
+				A8D9CDF22AB80517007ABB4A /* Services */,
+				A8D9CDEF2AB800CA007ABB4A /* Model */,
 				3519532C2AB5A44F002D3D69 /* TestAppApp.swift */,
 				3519532E2AB5A44F002D3D69 /* ContentView.swift */,
 				351953302AB5A451002D3D69 /* Assets.xcassets */,
@@ -131,6 +150,48 @@
 				3519534E2AB5A451002D3D69 /* TestAppUITestsLaunchTests.swift */,
 			);
 			path = TestAppUITests;
+			sourceTree = "<group>";
+		};
+		A8D9CDEF2AB800CA007ABB4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8D9CDF02AB80424007ABB4A /* AlbumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8D9CDF22AB80517007ABB4A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A8D9CDF32AB8052C007ABB4A /* AlbumServices.swift */,
+				A8D9CDF52AB80602007ABB4A /* AlbumOfflineServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A8D9CDF72AB80954007ABB4A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A8D9CDF82AB80962007ABB4A /* AlbumRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A8D9CDFA2AB80A4F007ABB4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8D9CDFB2AB80A60007ABB4A /* AlbumViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8D9CDFD2AB80B59007ABB4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8D9CDFE2AB80B6B007ABB4A /* AlbumView.swift */,
+				A883176F2AB8190C007A8810 /* AlbumDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D9CDFC2AB80A60007ABB4A /* AlbumViewModel.swift in Sources */,
+				A8D9CDF12AB80424007ABB4A /* AlbumModel.swift in Sources */,
+				A8D9CDF92AB80962007ABB4A /* AlbumRepository.swift in Sources */,
+				A8D9CDF42AB8052C007ABB4A /* AlbumServices.swift in Sources */,
 				351953362AB5A451002D3D69 /* Persistence.swift in Sources */,
 				351953392AB5A451002D3D69 /* TestApp.xcdatamodeld in Sources */,
 				3519532F2AB5A44F002D3D69 /* ContentView.swift in Sources */,
+				A8D9CDF62AB80602007ABB4A /* AlbumOfflineServices.swift in Sources */,
+				A88317702AB8190C007A8810 /* AlbumDetailView.swift in Sources */,
+				A8D9CDFF2AB80B6B007ABB4A /* AlbumView.swift in Sources */,
 				3519532D2AB5A44F002D3D69 /* TestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,7 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestApp/Preview Content\"";
-				DEVELOPMENT_TEAM = VFG7GA4B9W;
+				DEVELOPMENT_TEAM = WVHSKKV4P8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -433,12 +501,14 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.restech.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntde.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,7 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestApp/Preview Content\"";
-				DEVELOPMENT_TEAM = VFG7GA4B9W;
+				DEVELOPMENT_TEAM = WVHSKKV4P8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -462,12 +532,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.restech.TestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ntde.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

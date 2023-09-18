@@ -9,6 +9,22 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    let viewModel = AlbumViewModel(
+            repository: AlbumRepository(
+                albumService: AlbumServices(),
+                albumOfflineService: AlbumOfflineServices(
+                    persistenContainer: PersistenceController.shared.container
+                )
+            )
+        )
+    
+    var body: some View {
+        AlbumView()
+            .environmentObject(viewModel)
+    }
+}
+
+/*struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -85,4 +101,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
-}
+}*/
