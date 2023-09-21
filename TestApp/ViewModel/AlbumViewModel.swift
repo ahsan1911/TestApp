@@ -9,8 +9,19 @@ import Foundation
 import Combine
 
 class AlbumViewModel: ObservableObject {
+    
+    enum ViewState {
+        case START
+        case LOADING
+        case SUCCESS(data: [AlbumModel])
+        case FAILURE(error: Error)
+    }
+    
     let repository: AlbumRepository
+    
     @Published var albums: [AlbumModel] = []
+    @Published var currentState: ViewState = .START
+    
     var cancellable = Set<AnyCancellable>()
     
     init(repository: AlbumRepository, cancellable: Set<AnyCancellable> = Set<AnyCancellable>()) {
@@ -19,6 +30,7 @@ class AlbumViewModel: ObservableObject {
     }
     
     func fetchAlbums() {
+        currentState = .LOADING
         repository.getAlbums()
             .receive(on: DispatchQueue.main)
             .sink{ completion in
@@ -27,9 +39,11 @@ class AlbumViewModel: ObservableObject {
                     break
                 case .failure(let error):
                     print("Failed to fetch todos: \(error)")
+                    self.currentState = .FAILURE(error: error)
                 }
             } receiveValue: { [weak self] album in
                 self?.albums = album
+                self?.currentState = .SUCCESS(data: album)
             }.store(in: &cancellable)
     }
     

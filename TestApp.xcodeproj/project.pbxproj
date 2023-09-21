@@ -16,6 +16,11 @@
 		351953432AB5A451002D3D69 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351953422AB5A451002D3D69 /* TestAppTests.swift */; };
 		3519534D2AB5A451002D3D69 /* TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519534C2AB5A451002D3D69 /* TestAppUITests.swift */; };
 		3519534F2AB5A451002D3D69 /* TestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3519534E2AB5A451002D3D69 /* TestAppUITestsLaunchTests.swift */; };
+		A80ABB312ABC52ED0071D186 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ABB302ABC52ED0071D186 /* NetworkService.swift */; };
+		A80ABB332ABC54E40071D186 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ABB322ABC54E40071D186 /* HomePageModel.swift */; };
+		A80ABB352ABC58CA0071D186 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ABB342ABC58CA0071D186 /* HomePageViewModel.swift */; };
+		A80ABB372ABC5A1C0071D186 /* HomePageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ABB362ABC5A1C0071D186 /* HomePageRepository.swift */; };
+		A80ABB392ABC6F3E0071D186 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80ABB382ABC6F3E0071D186 /* HomePageView.swift */; };
 		A88317702AB8190C007A8810 /* AlbumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A883176F2AB8190C007A8810 /* AlbumDetailView.swift */; };
 		A8D9CDF12AB80424007ABB4A /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9CDF02AB80424007ABB4A /* AlbumModel.swift */; };
 		A8D9CDF42AB8052C007ABB4A /* AlbumServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D9CDF32AB8052C007ABB4A /* AlbumServices.swift */; };
@@ -55,6 +60,11 @@
 		351953482AB5A451002D3D69 /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3519534C2AB5A451002D3D69 /* TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITests.swift; sourceTree = "<group>"; };
 		3519534E2AB5A451002D3D69 /* TestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A80ABB302ABC52ED0071D186 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A80ABB322ABC54E40071D186 /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
+		A80ABB342ABC58CA0071D186 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		A80ABB362ABC5A1C0071D186 /* HomePageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageRepository.swift; sourceTree = "<group>"; };
+		A80ABB382ABC6F3E0071D186 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		A883176F2AB8190C007A8810 /* AlbumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailView.swift; sourceTree = "<group>"; };
 		A8D9CDF02AB80424007ABB4A /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		A8D9CDF32AB8052C007ABB4A /* AlbumServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumServices.swift; sourceTree = "<group>"; };
@@ -156,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				A8D9CDF02AB80424007ABB4A /* AlbumModel.swift */,
+				A80ABB322ABC54E40071D186 /* HomePageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +176,7 @@
 			children = (
 				A8D9CDF32AB8052C007ABB4A /* AlbumServices.swift */,
 				A8D9CDF52AB80602007ABB4A /* AlbumOfflineServices.swift */,
+				A80ABB302ABC52ED0071D186 /* NetworkService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -173,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				A8D9CDF82AB80962007ABB4A /* AlbumRepository.swift */,
+				A80ABB362ABC5A1C0071D186 /* HomePageRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -181,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				A8D9CDFB2AB80A60007ABB4A /* AlbumViewModel.swift */,
+				A80ABB342ABC58CA0071D186 /* HomePageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -190,6 +204,7 @@
 			children = (
 				A8D9CDFE2AB80B6B007ABB4A /* AlbumView.swift */,
 				A883176F2AB8190C007A8810 /* AlbumDetailView.swift */,
+				A80ABB382ABC6F3E0071D186 /* HomePageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,7 +340,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D9CDFC2AB80A60007ABB4A /* AlbumViewModel.swift in Sources */,
+				A80ABB332ABC54E40071D186 /* HomePageModel.swift in Sources */,
+				A80ABB352ABC58CA0071D186 /* HomePageViewModel.swift in Sources */,
 				A8D9CDF12AB80424007ABB4A /* AlbumModel.swift in Sources */,
+				A80ABB372ABC5A1C0071D186 /* HomePageRepository.swift in Sources */,
 				A8D9CDF92AB80962007ABB4A /* AlbumRepository.swift in Sources */,
 				A8D9CDF42AB8052C007ABB4A /* AlbumServices.swift in Sources */,
 				351953362AB5A451002D3D69 /* Persistence.swift in Sources */,
@@ -334,6 +352,8 @@
 				A8D9CDF62AB80602007ABB4A /* AlbumOfflineServices.swift in Sources */,
 				A88317702AB8190C007A8810 /* AlbumDetailView.swift in Sources */,
 				A8D9CDFF2AB80B6B007ABB4A /* AlbumView.swift in Sources */,
+				A80ABB312ABC52ED0071D186 /* NetworkService.swift in Sources */,
+				A80ABB392ABC6F3E0071D186 /* HomePageView.swift in Sources */,
 				3519532D2AB5A44F002D3D69 /* TestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

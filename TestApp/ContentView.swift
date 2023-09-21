@@ -9,18 +9,26 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    let viewModel = AlbumViewModel(
+    /*let viewModel = AlbumViewModel(
             repository: AlbumRepository(
                 albumService: AlbumServices(),
                 albumOfflineService: AlbumOfflineServices(
                     persistenContainer: PersistenceController.shared.container
                 )
             )
+        )*/
+    
+    let viewModel = HomePageViewModel(
+        repository: HomePageRepository(
+            networkService: NetworkService()
         )
+    )
+    
     
     var body: some View {
-        AlbumView()
-            .environmentObject(viewModel)
+        /*AlbumView()
+            .environmentObject(viewModel)*/
+        HomePageView(viewModel: viewModel)
     }
 }
 
